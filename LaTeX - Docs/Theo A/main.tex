@@ -1,0 +1,47 @@
+\documentclass[a4paper, 12pt]{book}
+
+% Sprachunterstützung
+\usepackage[ngerman]{babel} % Für deutsche Sprache
+\usepackage[utf8]{inputenc} % UTF-8 Eingabe
+\usepackage[T1]{fontenc}    % Korrekte Trennung für Umlaute
+
+\usepackage{amsmath}
+
+\newcommand{\cvec}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\ddt}[1]{\frac{\text{d}}{\text{d}t}\left[#1\right]}
+\newcommand{\dsqdt}[1]{\frac{\text{d}^2}{\text{d}t^2}\left[#1\right]}
+
+\begin{document}
+
+\tableofcontents
+
+\chapter{Kinematik}
+\input{Bahnkurven}
+\input{Koordinatensysteme}
+\input{Inertialsysteme }
+\input{Galilei Transformation}
+\input{Newtonsche Axiome}
+\input{Energie}
+\input{Impuls}
+\input{Drehimpuls}
+%\input{Definitionen}
+\input{Erhaltungssätze}
+\input{System von Massenpunkten}
+\input{Harmonischer Oszillator}
+\input{Zwei-Körper-Problem mit Zentralkraft}
+\input{Kepler}
+\input{Klassifizierung der Bahnen}
+\input{Rutherford-Streuung}
+
+\chapter{Mathematische Hilfsmittel}
+\input{Differential- und Integralrechnung}
+\input{Einfache Differentialgleichungen }
+\input{Potenzreihen}
+\input{Komplexe Zahlen}
+\input{Vektoren}
+\input{Gradient}
+\input{Linienintegral}
+\input{Delta Distribution}
+\end{document}
+
+%s/\<\w\+\>/\\input{\0}/g
