@@ -19,7 +19,7 @@ Eigentlich benötigt man nur drei verschiedene Arten von Koordinatensystemen, da
     %    \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
         
     % Example point
-    \filldraw[red] (1,2) circle (2pt) node[above] {$(x_1,y_1,z)$};
+    \filldraw[red] (1,2) circle (2pt) node[above] {$(x,y,z)$};
 \end{tikzpicture}
 
 \begin{tikzpicture}
@@ -48,4 +48,30 @@ Eigentlich benötigt man nur drei verschiedene Arten von Koordinatensystemen, da
       % Draw labels
 %    \node[red] at (1.5,1.5) {$(r, \theta, \phi)$};
     \filldraw[red] (P) circle (2pt); % Spherical point
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % Draw axes
+    \draw[->] (0,0) -- (3,0) node[right] {$y$}; 
+    \draw[->] (0,0) -- (0,3) node[above] {$z$}; 
+    \draw[->] (0,0) -- (-2,-2) node[below] {$x$}; 
+
+    % Draw cylindrical point
+    \coordinate (O) at (0,0); % Origin
+    \coordinate (P) at (1.5,2); % Point in cylindrical coordinates
+    \coordinate (ProjP) at (1.5,0); % Projection of P onto the x-y plane
+
+    % Draw radial vector
+    \draw[->, thick, red] (O) -- (1.5,0) node[below right] {$r$}; % Radial distance
+    \draw[->, thick, gray] (1.5,0) -- (P) node[right] {$z$}; % Height
+
+    % Add dashed line for projection
+    \draw[dashed, gray] (O) -- (P) node[above right] {}; % Radius to point
+
+    % Add phi (azimuthal angle)
+    \draw[->, thick, blue] (0.7,0) arc[start angle=0, end angle=45, radius=0.7cm];
+    \node[blue] at (0.8,0.3) {$\varphi$};
+
+    % Draw labels
+    \filldraw[red] (P) circle (2pt) node[above] {$(r, \varphi, z)$}; % Cylindrical point
 \end{tikzpicture}
