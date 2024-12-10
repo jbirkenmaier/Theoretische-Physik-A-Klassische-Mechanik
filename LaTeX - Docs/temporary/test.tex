@@ -6,28 +6,38 @@
 	
 	\begin{tikzpicture}
 		% Draw axes
-		\draw[->] (0,0) -- (3,0) node[right] {$y$}; 
-		\draw[->] (0,0) -- (0,3) node[above] {$z$}; 
-		\draw[->] (0,0) -- (-2,-2) node[below] {$x$}; 
+		\draw[->] (0,0) -- (4,0) node[right] {$y$}; 
+		\draw[->] (0,0) -- (0,5) node[above] {$z$}; 
+		\draw[->] (0,0) -- (-3,-3) node[below left] {$x$}; 
 		
-		% Draw cylindrical point
+		% Draw the cylinder (centered on the z-axis)
+		\draw[thick] (0,4) ellipse (1.5cm and 0.5cm); % Top ellipse
+		\draw[thick] (-1.5,0) -- (-1.5,4); % Left side of cylinder
+		\draw[thick] (1.5,0) -- (1.5,4); % Right side of cylinder
+		\draw[thick, dashed] (-1.5,0) arc[start angle=180, end angle=360, x radius=1.5cm, y radius=0.5cm]; % Dashed bottom ellipse back
+		\draw[thick] (-1.5,0) arc[start angle=180, end angle=0, x radius=1.5cm, y radius=0.5cm]; % Solid bottom ellipse front
+		
+		% Add cylindrical point
 		\coordinate (O) at (0,0); % Origin
-		\coordinate (P) at (1.5,1); % Point in cylindrical coordinates
-		\coordinate (ProjP) at (1.5,0); % Projection of P onto the x-y plane
+		\coordinate (P) at (-1,3); % Point in cylindrical coordinates
+		\coordinate (P_for_z_vector) at (-0.97, 2.91);
+		\coordinate (ProjP) at (-1,0.3); % Projection of P onto the x-y plane
+		\coordinate (Projpz) at (0,3);
 		
-		\draw[->, thick, red] (O) -- (P) node[above right] {$\vec{r}$}; % Radial vector (in the x-y plane)
-		\draw[dashed, gray] (P) -- (ProjP) node[below right] {}; % Projection line in x-y plane
-		\draw[->, dashed, gray] (ProjP) -- (0,0) node[below left] {}; % Radius in x-y plane
+		\filldraw[red] (P) circle (2pt); % Cylindrical point
+		\draw[->, thick, red] (O) -- (ProjP) node[above right] {$\vec{\rho}$}; % Radial vector
+		\draw[dashed, gray] (P) -- (ProjP) node[below right] {}; % Projection line
+		\draw[dashed, gray] (P) -- (Projpz) node[below right] {}; % Projection line
 		
-		% Add theta (polar angle)
-		\draw[->, thick, blue] (0.5,0.33) arc[start angle=10, end angle=70, radius=0.7cm];
-		\node[blue] at (0.2,0.5) {$\theta$};
+		% Add azimuthal angle (phi)
+		\draw[->, thick, green] (-0.3,-0.3) arc[start angle=70, end angle=-3, radius=-.5cm];
+		\node[green] at (-0.8,-.1) {$\varphi$};
 		
-		% Add z (height)
-		\draw[->, thick, orange] (1.5,1) -- (1.5,0) node[midway, right] {$z$}; % Vertical projection on z-axis
+		% Add z-coordinate (height)
+		\draw[->, thick, purple] (0,0) -- (P_for_z_vector) node[midway, right] {$z$}; % Vertical vector
 		
 		% Draw labels
-		\filldraw[red] (P) circle (2pt); % Cylindrical point
+		%\node[red] at (1.2,3.2) {$(\rho, \varphi, z)$}; % Label for point P
 	\end{tikzpicture}
 	
 \end{document}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.11.13)  9 DEC 2024 18:47
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.11.13)  10 DEC 2024 16:03
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -743,13 +743,13 @@ L3 programming layer <2024-11-02>
 )
 
 Here is how much of LuaTeX's memory you used:
- 15075 strings out of 475664
+ 15102 strings out of 475664
  100000,953878 words of node,token memory allocated
  504 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 53 glue_spec
 , 7 attribute_list, 2 write nodes
-   avail lists: 2:2287,3:672,4:100,5:320,6:22,7:4016,8:53,9:757,10:8,11:372
- 37490 multiletter control sequences out of 65536+600000
+   avail lists: 2:2599,3:736,4:106,5:320,6:22,7:4016,8:53,9:757,10:8,11:372
+ 37517 multiletter control sequences out of 65536+600000
  39 fonts using 2461295 bytes
  102i,18n,101p,443b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/Johannes/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
@@ -766,7 +766,7 @@ ohannes/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users
 s/Johannes/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/User
 s/Johannes/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Us
 ers/Johannes/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
-Output written on main.pdf (6 pages, 187683 bytes).
+Output written on main.pdf (6 pages, 188095 bytes).
 
 PDF statistics: 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
