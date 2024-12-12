@@ -1,0 +1,10 @@
+\selectlanguage *[spelling=new]{german}
+\contentsline {chapter}{\numberline {1}Kinematik}{3}{}%
+\contentsline {section}{\numberline {1.1}Bahnkurven}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Der Massepunkt}{3}{}%
+\contentsline {subsection}{\numberline {1.1.2}Der Ortsvektor}{3}{}%
+\contentsline {subsection}{\numberline {1.1.3}Die Geschwindigkeit}{3}{}%
+\contentsline {subsection}{\numberline {1.1.4}Die Beschleunigung}{4}{}%
+\contentsline {subsection}{\numberline {1.1.5}Freiheitsgrade}{4}{}%
+\contentsline {subsection}{\numberline {1.1.6}Beispiele}{5}{}%
+\contentsline {section}{\numberline {1.2}Koordinatensysteme}{5}{}%
