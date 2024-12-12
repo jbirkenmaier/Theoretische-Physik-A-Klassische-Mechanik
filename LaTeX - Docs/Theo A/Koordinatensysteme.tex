@@ -26,7 +26,7 @@
 Koordinatensysteme werden zur Beschreibung physikalischer Systeme verwendet. Allgemein bekannt ist das kartesische Koordinatensystem.
 Eigentlich benötigt man nur drei verschiedene Arten von Koordinaten, die kartesischen Koordinaten (Abbildung \ref{fig:kart_koord}),  die Zylinderkoordinaten (Abbildung \ref{fig:zyl_koord}) und die Kugelkoordinaten(Abbildung \ref{fig:kugel_koord}). 
 Daneben gibt es auch die Polarkoordinaten. Dieses Koordinatensystem ist jedoch ein Zylinderkoordinatensystem bei welchem die z-Komponente null ist, also nur zwei Dimensionen betrachtet werden und ist daher im Folgenden unter Zylinderkoordinaten inbegriffen. 
-
+\newpage
 \begin{importantbox}[Wahl eines Koordinatensystems]
 Es gibt vornehmlich drei Arten von Koordinatensystemen. 
 \begin{itemize}
@@ -37,10 +37,49 @@ Es gibt vornehmlich drei Arten von Koordinatensystemen.
 Das betrachtete Problem bestimmt welches Koordinatensystem gewählt wird. Meistens wird das Koordinatensystem entsprechend der nächstverwandten Geometrie des Systems gewählt. Allgemein gilt: Das Koordinatensystem, welches das Problem am stärksten vereinfacht, ist das zu bevorzugende Koordinatensystem.
 
 \paragraph{Wie funktioniert die Wahl eines Koordinatensystems?}
-Grundsätzlich wird immer zunächst ein Kartesisches Koordinatensystem zugrunde gelegt. Dann wählt man Koordinaten, welche das Problem möglichst einfach darstellen. Hat man sich für eine Darstellung entschieden, drückt man die kartesischen Koordinaten durch die gewählten neuen Koordinaten aus.
-Einfaches Beispiel, Zylinderkoordinaten in einer Dimension (Polarkoordinaten)
-
-
+Grundsätzlich wird immer zunächst ein Kartesisches Koordinatensystem zugrunde gelegt. Dann wählt man Koordinaten, welche das Problem möglichst einfach darstellen. Hat man sich für eine Darstellung entschieden, drückt man die Kartesischen Koordinaten durch die gewählten neuen Koordinaten aus.
+Einfaches Beispiel, Zylinderkoordinaten in einer Dimension (Polarkoordinaten)\newline
+\begin{multicols}{2} % Create two columns
+	\begin{tikzpicture}
+		% Draw axes
+		\draw[->] (0,0) -- (3,0) node[right] {$y$}; 
+		\draw[->] (0,0) -- (0,2) node[above] {$z$}; 
+		\draw[->] (0,0) -- (-2,-2) node[below left] {$x$}; 
+		
+		% Draw the cylinder (centered on the z-axis)
+		%\draw[thick] (0,4) ellipse (1.5cm and 0.5cm); % Top ellipse
+		%\draw[thick] (-1.5,0) -- (-1.5,4); % Left side of cylinder
+		%\draw[thick] (1.5,0) -- (1.5,4); % Right side of cylinder
+		\draw[thick, dashed] (-1.5,0) arc[start angle=180, end angle=360, x radius=1.5cm, y radius=0.5cm]; % Dashed bottom ellipse back
+		\draw[thick] (-1.5,0) arc[start angle=180, end angle=0, x radius=1.5cm, y radius=0.5cm]; % Solid bottom ellipse front
+		
+		% Add cylindrical point
+		\coordinate (O) at (0,0); % Origin
+		\coordinate (P) at (-1,3); % Point in cylindrical coordinates
+		\coordinate (P_for_z_vector) at (-0.97, 2.91);
+		\coordinate (ProjP) at (-1,0.3); % Projection of P onto the x-y plane
+		\coordinate (Projpz) at (0,3);
+		
+		%\filldraw[red] (P) circle (2pt); % Cylindrical point
+		\draw[->, thick, red] (O) -- (ProjP) node[above right] {$\vec{\rho}$}; % Radial vector
+		%\draw[dashed, gray] (P) -- (ProjP) node[below right] {}; % Projection line
+		%\draw[dashed, gray] (P) -- (Projpz) node[below right] {}; % Projection line
+		%\draw[blue, thick] (0,0) -- (0, 3) 	node[midway, right] {$z$};
+		
+		% Add azimuthal angle (phi)
+		\draw[->, thick, green] (-0.3,-0.3) arc[start angle=70, end angle=-3, radius=-.5cm];
+		\node[green] at (-0.8,-.1) {$\varphi$};
+		
+		% Add z-coordinate (height)
+		%\draw[->, thick, purple] (0,0) -- (P_for_z_vector) node[midway, right] {$\vec{r}$}; % Vertical vector
+		
+		% Draw labels
+		%\node[red] at (1.2,3.2) {$(\rho, \varphi, z)$}; % Label for point P
+	\end{tikzpicture}
+	\columnbreak % Force break to the second column
+	
+	This is the second column content.
+\end{multicols}
 \end{importantbox}
 
 
