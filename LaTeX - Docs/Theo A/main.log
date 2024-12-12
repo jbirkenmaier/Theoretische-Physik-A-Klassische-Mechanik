@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.10)  12 DEC 2024 07:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.10)  12 DEC 2024 07:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,26 +620,44 @@ Kapitel 1.
 
 [3]) (Koordinatensysteme.tex
 
-[4])
+[4]
+
+LaTeX Warning: Reference `fig:zyl_koord' on page 5 undefined on input line 27.
+
+
+LaTeX Warning: Reference `fig:kugel_koord' on page 5 undefined on input line 27
+.
+
+
+Overfull \hbox (1.60802pt too wide) in paragraph at lines 26--29
+[]\TU/lmr/m/n/12 Koordinatensysteme werden zur Beschreibung physikalischer Syst
+eme ver-
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[5]
+[5])
 
 [6] (main.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 16219 strings out of 408788
- 370262 string characters out of 5748058
- 792913 words of memory out of 5000000
- 38899 multiletter control sequences out of 15000+600000
+ 16224 strings out of 408788
+ 370366 string characters out of 5748058
+ 793177 words of memory out of 5000000
+ 38904 multiletter control sequences out of 15000+600000
  561575 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,17n,107p,438b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,107p,438b,678s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (6 pages).

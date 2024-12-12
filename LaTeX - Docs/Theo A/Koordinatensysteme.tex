@@ -1,26 +1,34 @@
 \section{Koordinatensysteme}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		% Draw axes
+		\draw[->] (0,0) -- (3,0) node[right] {$x$}; % x-axis
+		\draw[->] (0,0) -- (0,3) node[above] {$y$}; % y-axis
+		\draw[->] (0,0) -- (-2,-2) node[below] {$z$}; %z-axis
+		
+		% Add grid (optional)
+		%\draw[very thin, gray] (-3,-3) grid (3,3);
+		
+		% Add labels for the axes
+		%\foreach \x in {-2,-1,1,2} % x-axis labels
+		%    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+		%\foreach \y in {-2,-1,1,2} % y-axis labels
+		%    \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
+		
+		% Example point
+		\filldraw[red] (1,2) circle (2pt) node[above] {$(x,y,z)$};
+	\end{tikzpicture}
+	\caption[Kartesische Koordinaten]{Das Kartesische Koordinatensystem}
+	\label{fig:kart_koord}
+\end{figure}
 
 Koordinatensysteme werden zur Beschreibung physikalischer Systeme verwendet. Allgemein bekannt ist das kartesische Koordinatensystem.
-Eigentlich benötigt man nur drei verschiedene Arten von Koordinatensystemen, das kartesische Koordinatensystem,  das Zylinderkoordinatensystem und das Kugelkoordinatensystem. 
+Eigentlich benötigt man nur drei verschiedene Arten von Koordinatensystemen, das kartesische Koordinatensystem (Abbildung \ref{fig:kart_koord}),  das Zylinderkoordinatensystem (Abbildung \ref{fig:zyl_koord}) und das Kugelkoordinatensystem (Abbildung \ref{fig:kugel_koord}). 
+Daneben gibt es auch das Polarkoordinatensystem. Dieses ist jedoch ein Zylinderkoordinatensystem bei welchem die z-Komponente null ist, also nur zwei Dimensionen betrachtet werden und ist daher im Folgenden unter Zylinderkoordinaten inbegriffen. 
 
-\begin{tikzpicture}
-    % Draw axes
-    \draw[->] (0,0) -- (3,0) node[right] {$x$}; % x-axis
-    \draw[->] (0,0) -- (0,3) node[above] {$y$}; % y-axis
-    \draw[->] (0,0) -- (-2,-2) node[below] {$z$}; %z-axis
+\subsection{Zylinderkoordinaten}
 
-    % Add grid (optional)
-    %\draw[very thin, gray] (-3,-3) grid (3,3);
-
-    % Add labels for the axes
-    %\foreach \x in {-2,-1,1,2} % x-axis labels
-    %    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
-    %\foreach \y in {-2,-1,1,2} % y-axis labels
-    %    \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
-        
-    % Example point
-    \filldraw[red] (1,2) circle (2pt) node[above] {$(x,y,z)$};
-\end{tikzpicture}
 
 \begin{tikzpicture}
     % Draw axes
