@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.10)  12 DEC 2024 07:25
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.10)  12 DEC 2024 07:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,7 +525,11 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks34
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `fig:kart_koord' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -635,11 +639,14 @@ eme ver-
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[5])
+[5]
 
 [6] (main.aux)
  ***********
@@ -650,14 +657,17 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
  16224 strings out of 408788
  370366 string characters out of 5748058
- 793177 words of memory out of 5000000
+ 793407 words of memory out of 5000000
  38904 multiletter control sequences out of 15000+600000
  561575 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,17n,107p,438b,678s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,107p,438b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (6 pages).

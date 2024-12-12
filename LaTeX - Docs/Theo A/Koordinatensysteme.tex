@@ -24,39 +24,45 @@
 \end{figure}
 
 Koordinatensysteme werden zur Beschreibung physikalischer Systeme verwendet. Allgemein bekannt ist das kartesische Koordinatensystem.
-Eigentlich benötigt man nur drei verschiedene Arten von Koordinatensystemen, das kartesische Koordinatensystem (Abbildung \ref{fig:kart_koord}),  das Zylinderkoordinatensystem (Abbildung \ref{fig:zyl_koord}) und das Kugelkoordinatensystem (Abbildung \ref{fig:kugel_koord}). 
-Daneben gibt es auch das Polarkoordinatensystem. Dieses ist jedoch ein Zylinderkoordinatensystem bei welchem die z-Komponente null ist, also nur zwei Dimensionen betrachtet werden und ist daher im Folgenden unter Zylinderkoordinaten inbegriffen. 
+Eigentlich benötigt man nur drei verschiedene Arten von Koordinaten, die kartesischen Koordinaten (Abbildung \ref{fig:kart_koord}),  die Zylinderkoordinaten (Abbildung \ref{fig:zyl_koord}) und die Kugelkoordinaten(Abbildung \ref{fig:kugel_koord}). 
+Daneben gibt es auch die Polarkoordinaten. Dieses Koordinatensystem ist jedoch ein Zylinderkoordinatensystem bei welchem die z-Komponente null ist, also nur zwei Dimensionen betrachtet werden und ist daher im Folgenden unter Zylinderkoordinaten inbegriffen. 
 
 \subsection{Zylinderkoordinaten}
 
 
+
+\begin{figure}[h]
+	\centering
 \begin{tikzpicture}
-    % Draw axes
-    \draw[->] (0,0) -- (3,0) node[right] {$y$}; 
-    \draw[->] (0,0) -- (0,3) node[above] {$z$}; 
-    \draw[->] (0,0) -- (-2,-2) node[below] {$x$}; 
-
-    % Draw spherical point
-    \coordinate (O) at (0,0); % Origin
-    \coordinate (P) at (1.5,1); % Point in spherical coordinates
-    \coordinate (ProjP) at (1.5,-2); % Projection of P onto the x-y plane
-
-    \draw[->, thick, red] (O) -- (1.4,0.93) node[above] {$\vec{ r }$}; % Radius vector
-    \draw[dashed, gray] (P) -- (ProjP) node[below right] {}; % Projection line
-    \draw[dashed, gray] (O) -- (ProjP) node[below] {}; % Projection vector in x-y plane
-
-    % Add theta (polar angle)
-    \draw[->, thick, blue] (0.5,0.33) arc[start angle=10, end angle=70, radius=0.7cm];
-    \node[blue] at (0.2,0.5) {$\theta$};
-
-    % Add phi (azimuthal angle)
-    \draw[->, thick, green] (-0.5,-0.5) arc[start angle=-135, end angle=-40, radius=0.55cm];
-    \node[green] at (-0.05,-0.38) {$\varphi$};
-
-      % Draw labels
-%    \node[red] at (1.5,1.5) {$(r, \theta, \phi)$};
-    \filldraw[red] (P) circle (2pt); % Spherical point
+	% Draw axes
+	\draw[->] (0,0) -- (3,0) node[right] {$y$}; 
+	\draw[->] (0,0) -- (0,3) node[above] {$z$}; 
+	\draw[->] (0,0) -- (-2,-2) node[below] {$x$}; 
+	
+	% Draw spherical point
+	\coordinate (O) at (0,0); % Origin
+	\coordinate (P) at (1.5,1); % Point in spherical coordinates
+	\coordinate (ProjP) at (1.5,-2); % Projection of P onto the x-y plane
+	
+	\draw[->, thick, red] (O) -- (1.4,0.93) node[above] {$\vec{ r }$}; % Radius vector
+	\draw[dashed, gray] (P) -- (ProjP) node[below right] {}; % Projection line
+	\draw[dashed, gray] (O) -- (ProjP) node[below] {}; % Projection vector in x-y plane
+	
+	% Add theta (polar angle)
+	\draw[->, thick, blue] (0.5,0.33) arc[start angle=10, end angle=70, radius=0.7cm];
+	\node[blue] at (0.2,0.5) {$\theta$};
+	
+	% Add phi (azimuthal angle)
+	\draw[->, thick, green] (-0.5,-0.5) arc[start angle=-135, end angle=-40, radius=0.55cm];
+	\node[green] at (-0.05,-0.38) {$\varphi$};
+	
+	% Draw labels
+	%    \node[red] at (1.5,1.5) {$(r, \theta, \phi)$};
+	\filldraw[red] (P) circle (2pt); % Spherical point
 \end{tikzpicture}
+	\caption[Kugelkoordinaten]{Die Kugelkoordinaten}
+	\label{fig:kart_koord}
+\end{figure}
 
 \begin{tikzpicture}
 	% Draw axes
