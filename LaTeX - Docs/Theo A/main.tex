@@ -1,4 +1,20 @@
-\documentclass[a4paper, 12pt]{book}
+\documentclass[a4paper, 12pt, oneside]{book}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[most]{tcolorbox}
+\newtcolorbox{importantbox}[1][]{
+	colback=blue!10!white,   % Background color
+	colframe=blue!75!white,    % Border color
+	coltitle=blue,           % Title color
+	colbacktitle=green!15!white,% Title background color
+	fonttitle=\bfseries,      % Title font style
+	title=#1,                 % Box title
+	rounded corners,            % Sharp edges
+	boxrule=0.5mm,              % Thickness of the border
+	left=1em,                 % Left padding
+	right=1em,                % Right padding
+	top=0.5em,                % Top padding
+	bottom=0.5em              % Bottom padding
+}
 
 % Sprachunterstützung
 %\usepackage[ngerman]{babel} % Für deutsche Sprache
