@@ -1,6 +1,22 @@
 \documentclass[a4paper, 12pt, oneside]{book}
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage[most]{tcolorbox}
+
+%Inverting Background
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\pagecolor{black} % Background color
+\color{white}     % Text color
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=cyan,   % Color for internal links
+	urlcolor=orange,  % Color for URLs
+	citecolor=lime    % Color for citations
+}
+
+
 \newtcolorbox{importantbox}[1][]{
 	colback=blue!10!white,   % Background color
 	colframe=blue!75!white,    % Border color

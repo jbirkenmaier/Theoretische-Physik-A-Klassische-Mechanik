@@ -1,11 +1,11 @@
 \selectlanguage *[spelling=new]{german}
-\contentsline {chapter}{\numberline {1}Kinematik}{2}{}%
-\contentsline {section}{\numberline {1.1}Bahnkurven}{2}{}%
-\contentsline {subsection}{\numberline {1.1.1}Der Massepunkt}{2}{}%
-\contentsline {subsection}{\numberline {1.1.2}Der Ortsvektor}{2}{}%
-\contentsline {subsection}{\numberline {1.1.3}Die Geschwindigkeit}{2}{}%
-\contentsline {subsection}{\numberline {1.1.4}Die Beschleunigung}{3}{}%
-\contentsline {subsection}{\numberline {1.1.5}Freiheitsgrade}{3}{}%
-\contentsline {subsection}{\numberline {1.1.6}Beispiele}{3}{}%
-\contentsline {section}{\numberline {1.2}Koordinatensysteme}{3}{}%
-\contentsline {subsection}{\numberline {1.2.1}Zylinderkoordinaten}{4}{}%
+\contentsline {chapter}{\numberline {1}Kinematik}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Bahnkurven}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Der Massepunkt}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Der Ortsvektor}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Die Geschwindigkeit}{2}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Die Beschleunigung}{3}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Freiheitsgrade}{3}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Beispiele}{3}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}Koordinatensysteme}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Zylinderkoordinaten}{4}{subsection.1.2.1}%
