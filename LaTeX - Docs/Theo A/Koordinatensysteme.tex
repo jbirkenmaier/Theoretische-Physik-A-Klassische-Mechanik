@@ -50,25 +50,38 @@ Einfaches Beispiel, Zylinderkoordinaten in einer Dimension (Polarkoordinaten)\ne
 		%\draw[thick] (0,4) ellipse (1.5cm and 0.5cm); % Top ellipse
 		%\draw[thick] (-1.5,0) -- (-1.5,4); % Left side of cylinder
 		%\draw[thick] (1.5,0) -- (1.5,4); % Right side of cylinder
-		\draw[thick, dashed] (-1.5,0) arc[start angle=180, end angle=360, x radius=1.5cm, y radius=0.5cm]; % Dashed bottom ellipse back
+		\draw[thick] (-1.5,0) arc[start angle=180, end angle=360, x radius=1.5cm, y radius=0.5cm]; % Dashed bottom ellipse back
 		\draw[thick] (-1.5,0) arc[start angle=180, end angle=0, x radius=1.5cm, y radius=0.5cm]; % Solid bottom ellipse front
 		
 		% Add cylindrical point
 		\coordinate (O) at (0,0); % Origin
 		\coordinate (P) at (-1,3); % Point in cylindrical coordinates
 		\coordinate (P_for_z_vector) at (-0.97, 2.91);
-		\coordinate (ProjP) at (-1,0.3); % Projection of P onto the x-y plane
+		\coordinate (ProjP) at (1,-0.3); % Projection of P onto the x-y plane
 		\coordinate (Projpz) at (0,3);
 		
 		%\filldraw[red] (P) circle (2pt); % Cylindrical point
-		\draw[->, thick, red] (O) -- (ProjP) node[above right] {$\vec{\rho}$}; % Radial vector
+		\draw[->, thick, red] (O) -- (ProjP);
+		\node[red] at (1.2,-0.6) {$\vec{\rho}$}; % Radial vector
 		%\draw[dashed, gray] (P) -- (ProjP) node[below right] {}; % Projection line
 		%\draw[dashed, gray] (P) -- (Projpz) node[below right] {}; % Projection line
 		%\draw[blue, thick] (0,0) -- (0, 3) 	node[midway, right] {$z$};
 		
 		% Add azimuthal angle (phi)
-		\draw[->, thick, green] (-0.3,-0.3) arc[start angle=70, end angle=-3, radius=-.5cm];
-		\node[green] at (-0.8,-.1) {$\varphi$};
+		\draw[->, thick, black] (-0.25,-0.25) arc[start angle=-110, end angle=-40, radius=0.55cm];
+		\node[black] at (0.04,-.17) {\scriptsize$\varphi$};
+		
+		%Add x axis projection
+		\draw[dashed, thick, blue](-0.35,-0.35) -- (1,-0.35); 
+		\node[blue] at (-0.4,-0.15) {\scriptsize$x_1$};
+		
+		\draw[thick, blue] (O) -- (-0.35, -0.35);
+		
+		%Add y axis projection
+		\draw[dashed, thick, blue](1.27,0) -- (1,-0.35); 
+		\node[blue] at (0.6,0.15) {\scriptsize$x_2$};
+		
+		\draw[thick, blue] (O) -- (1.27,0);
 		
 		% Add z-coordinate (height)
 		%\draw[->, thick, purple] (0,0) -- (P_for_z_vector) node[midway, right] {$\vec{r}$}; % Vertical vector
@@ -77,8 +90,12 @@ Einfaches Beispiel, Zylinderkoordinaten in einer Dimension (Polarkoordinaten)\ne
 		%\node[red] at (1.2,3.2) {$(\rho, \varphi, z)$}; % Label for point P
 	\end{tikzpicture}
 	\columnbreak % Force break to the second column
-	
-	This is the second column content.
+	Aus der Skizze lässt sich ablesen, dass 
+	\begin{align}
+		x_1 &= |\vec{\rho}| \cos{\varphi}\\
+		x_2 &= |\vec{\rho}| \sin{\varphi}
+		
+	\end{align}
 \end{multicols}
 \end{importantbox}
 
@@ -119,6 +136,7 @@ Einfaches Beispiel, Zylinderkoordinaten in einer Dimension (Polarkoordinaten)\ne
 	
 	% Add z-coordinate (height)
 	\draw[->, thick, purple] (0,0) -- (P_for_z_vector) node[midway, right] {$\vec{r}$}; % Vertical vector
+	
 	
 	% Draw labels
 	%\node[red] at (1.2,3.2) {$(\rho, \varphi, z)$}; % Label for point P
